@@ -94,6 +94,8 @@ public class Main {
         return result;
     }
 
+
+
     public void start() {
         Scanner inputReader = new Scanner(System.in);
         while(true){
@@ -101,11 +103,12 @@ public class Main {
             // Ask Q1
             Set firstSet = querySet("Give the first set: ", inputReader);
 
+
             //lengthFirst = firstSet.getLength();
             Set secondSet = querySet("Give the second set: ", inputReader);
-
-
-
+    
+    
+            System.out.println("difference="+"{"+ String.join(" ",difference(firstSet, secondSet))+"}");
 
 
             // Check A1
@@ -122,6 +125,7 @@ public class Main {
 
             // report result
 
+            
 
         }
 
@@ -156,6 +160,7 @@ public class Main {
     }
 }
 
+// identifier for set class and for set identifier 
 
 
 
